@@ -1,0 +1,121 @@
+.about-me-froggy, .hobby, .project {
+background: linear-gradient(135deg, #b7e4c7, #95d5b2);
+border: 3px solid #2d6a4f;
+border-radius: 20px;
+padding: 30px 40px;
+max-width: 600px;
+margin: 50px auto;
+text-align: center;
+font-family: "Poppins", "Segoe UI", sans-serif;
+color: #1b4332;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-me-froggy:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-froggy h2, .hobby h2, .project h2 {
+font-size: 1.9em;
+margin-bottom: 15px;
+color: #1b4332;
+text-shadow: 1px 1px 0 #d8f3dc;
+}
+
+.about-me-froggy p, .hobby p, .project p {
+font-size: 1.1em;
+margin: 10px 0;
+}
+
+strong {
+color: #2d6a4f;
+}
+
+.links, .MorePages {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 12px 0;
+  background-color: #d8f3dc;
+  border: 2px solid #74c69d;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-color: #e0f7fa; /* light minty background */
+}
+.links a,
+.MorePages a {
+  color: #1b4332;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.05em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover,
+.MorePages a:hover {
+  color: #52b788;
+  transform: scale(1.08);
+  text-decoration: underline dotted #74c69d;
+}
+img.rounded {
+  border-radius: 15px; 
+  border: 2px solid #ccc; /
+  width: 100%; 
+  max-width: 400px; 
+  display: block;
+  margin: 1rem auto; 
+}
+footer {
+  background-color: #95d5b2; /* Softer green to match the theme */
+  border-top: 3px solid #2d6a4f;
+  padding: 25px 0;
+  text-align: center;
+  color: #1b4332;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  margin-top: 60px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #1b4332;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This pushes the footer to the bottom */
+}
+
+footer {
+  background-color: #95d5b2;
+  border-top: 3px solid #2d6a4f;
+  padding: 25px 0;
+  text-align: center;
+  color: #1b4332;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
