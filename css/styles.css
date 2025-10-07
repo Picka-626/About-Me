@@ -68,7 +68,7 @@ body {
 }
 img.rounded {
   border-radius: 15px; 
-  border: 2px solid #ccc; /
+  border: 2px solid #ccc; 
   width: 100%; 
   max-width: 400px; 
   display: block;
@@ -116,6 +116,51 @@ footer {
   font-family: "Poppins", "Segoe UI", sans-serif;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    .about-me-froggy,
+    .hobby,
+    .project {
+        padding: 20px;
+        margin: 30px auto;
+        max-width: 90%;
+    }
+
+    .links,
+    .MorePages {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    img.rounded {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-froggy h2,
+    .hobby h2,
+    .project h2 {
+        font-size: 1.5em;
+    }
+
+    .about-me-froggy p,
+    .hobby p,
+    .project p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
 
 
 
