@@ -1,4 +1,4 @@
-.about-me-froggy, .hobby, .project {
+.about-me-froggy, .hobby, .project, .Qotd {
 background: linear-gradient(135deg, #b7e4c7, #95d5b2);
 border: 3px solid #2d6a4f;
 border-radius: 20px;
@@ -17,14 +17,14 @@ transform: translateY(-5px);
 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.about-me-froggy h2, .hobby h2, .project h2 {
+.about-me-froggy h2, .hobby h2, .project h2, .Qotd h2 {
 font-size: 1.9em;
 margin-bottom: 15px;
 color: #1b4332;
 text-shadow: 1px 1px 0 #d8f3dc;
 }
 
-.about-me-froggy p, .hobby p, .project p {
+.about-me-froggy p, .hobby p, .project p, .Qotd p {
 font-size: 1.1em;
 margin: 10px 0;
 }
@@ -50,8 +50,7 @@ color: #2d6a4f;
 body {
   background-color: #e0f7fa; /* light minty background */
 }
-.links a,
-.MorePages a {
+.links a, .MorePages a{
   color: #1b4332;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -60,8 +59,7 @@ body {
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.links a:hover,
-.MorePages a:hover {
+.links a:hover, .MorePages a:hover{
   color: #52b788;
   transform: scale(1.08);
   text-decoration: underline dotted #74c69d;
@@ -120,14 +118,16 @@ footer {
 @media (max-width: 768px) {
     .about-me-froggy,
     .hobby,
-    .project {
+    .project,
+	.Qotd {
         padding: 20px;
         margin: 30px auto;
         max-width: 90%;
     }
 
     .links,
-    .MorePages {
+    .MorePages,
+	.Qotd {
         flex-direction: column;
         gap: 15px;
         padding: 10px;
@@ -146,13 +146,15 @@ footer {
 @media (max-width: 480px) {
     .about-me-froggy h2,
     .hobby h2,
-    .project h2 {
+    .project h2,
+	.Qotd h2 {
         font-size: 1.5em;
     }
 
     .about-me-froggy p,
     .hobby p,
-    .project p {
+    .project p,
+	.Qotd p {
         font-size: 1em;
     }
 
@@ -160,6 +162,7 @@ footer {
         font-size: 0.9em;
     }
 }
+
 
 
 
