@@ -114,6 +114,20 @@ footer {
   font-family: "Poppins", "Segoe UI", sans-serif;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
+.Qotd {
+  background: linear-gradient(135deg, #c0e8f4, #a0dbe8); /* softer teal-blue gradient */
+  border: 2px solid #74c69d; /* thinner, muted green border */
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  color: #1b4332; /* same as other sections */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 /* --- Responsive adjustments --- */
 @media (max-width: 768px) {
     .about-me-froggy,
