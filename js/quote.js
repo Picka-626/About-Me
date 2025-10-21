@@ -1,4 +1,4 @@
-// 1. List of quotes
+// Quotes list
 const quotes_credits = [
   "The only limit to our realization of tomorrow is our doubts of today. — Franklin D. Roosevelt",
   "What you do today can improve all your tomorrows. — Ralph Marston",
@@ -31,7 +31,7 @@ const quotes_nocredits = [
 
 const quotes = quotes_nocredits;
 
-// 2. Function to choose a quote based on the current date
+// Choose quote on current data
 function getQuoteOfTheDay() {
   const today = new Date();
   const dateString = today.toISOString().split("T")[0]; // e.g. "2025-10-13"
@@ -41,15 +41,16 @@ function getQuoteOfTheDay() {
     hash += dateString.charCodeAt(i);
   }
 
-  // 3. Pick a quote based on the hash
+  // Pick quote on hash
   const index = hash % quotes.length;
   return quotes[index];
 }
 
-// 4. Display it on the page
+// Display quote on page
 document.addEventListener("DOMContentLoaded", () => {
   const quoteElement = document.getElementById("Quote");
   quoteElement.textContent = getQuoteOfTheDay();
   quoteElement.style.opacity = 0;
   setTimeout(() => (quoteElement.style.transition = "opacity 1s", quoteElement.style.opacity = 1), 100);
+
 });
