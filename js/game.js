@@ -11,7 +11,7 @@ let timer;
 let timeLeft = 30;
 let tongue = null;
 
-// Function to start the game
+// Start game
 function startGame() {
   gameContainer.style.display = 'block';
   scoreDisplay.style.display = 'block';
@@ -31,7 +31,7 @@ function startGame() {
   }, 1000);
 }
 
-// Function to end the game
+// End game
 function endGame() {
   clearInterval(timer);
   gameContainer.style.display = 'none';
@@ -41,19 +41,19 @@ function endGame() {
   finalMessage.textContent = "Time's up! Your final score is " + score + ' 🐸';
 }
 
-// Show game when Froggy emoji is clicked
+// Show game upon click
 froggy.addEventListener('click', startGame);
 
-// Fly click increases score and moves it
+// Increase score and moving fly upon clicking
 fly.addEventListener('click', () => {
-  if (timeLeft <= 0) return; // ignore clicks if game ended
+  if (timeLeft <= 0) return; // Ignore if game ended
   score++;
   scoreDisplay.textContent = 'Score: ' + score;
 
-  // Frog tongue animation
+  // Recall tongue
   showEmojiTongue();
 
-  // Move fly to new random position
+  // Move fly randomly
   const maxX = gameContainer.clientWidth - fly.clientWidth;
   const maxY = gameContainer.clientHeight - fly.clientHeight;
   const randomX = Math.floor(Math.random() * maxX);
@@ -62,14 +62,14 @@ fly.addEventListener('click', () => {
   fly.style.top = randomY + 'px';
 });
 
-// Frog follows mouse inside the game
+// Follow mouse
 gameContainer.addEventListener('mousemove', e => {
   const rect = gameContainer.getBoundingClientRect();
   const x = e.clientX - rect.left - frog.clientWidth / 2;
   frog.style.left = Math.max(0, Math.min(gameContainer.clientWidth - frog.clientWidth, x)) + 'px';
 });
 
-// 👅 Emoji tongue animation
+// Tongue animation
 function showEmojiTongue() {
   if (tongue) tongue.remove();
 
@@ -83,7 +83,7 @@ function showEmojiTongue() {
   tongue.style.transition = 'all 0.15s ease-out';
   gameContainer.appendChild(tongue);
 
-  // Animate it upwards and fade in/out
+  // Animate upwards and fade
   requestAnimationFrame(() => {
     tongue.style.transform = 'translateY(-50px)';
     tongue.style.opacity = '1';
@@ -95,3 +95,4 @@ function showEmojiTongue() {
     setTimeout(() => tongue.remove(), 150);
   }, 300);
 }
+
