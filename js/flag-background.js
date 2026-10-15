@@ -17,7 +17,7 @@
     intervalDays: 1,               // days each flag stays up
     switchAt: "00:00",             // time of day to switch, 24h local time "HH:MM"
     startDate: null,               // optional "YYYY-MM-DD" when the first flag in `order` starts
-    testIntervalMinutes: null,     // e.g. 1 to rotate every minute while testing
+    testIntervalMinutes: 1,     // e.g. 1 to rotate every minute while testing
   };
   // ==============================================================
 
