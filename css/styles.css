@@ -50,9 +50,9 @@ color: #2d6a4f;
 body {
 	background: linear-gradient(
   to bottom,
-  rgb(214, 2, 112),
-  rgb(155, 79, 150) 50%,
-  rgb(0, 56, 168)
+  rgb(214, 2, 112) 0% 40%,
+  rgb(155, 79, 150) 40% 60%,
+  rgb(0, 56, 168) 60% 100%
 );
   }
 .links a, .MorePages a{
