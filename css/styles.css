@@ -48,14 +48,21 @@ color: #2d6a4f;
   margin-right: auto;
 }
 body {
-	background: linear-gradient(
-  to bottom,
-  rgb(91, 206, 250) 0% 20%,
-  rgb(245, 169, 184) 20% 40%,
-  rgb(255, 255, 255) 40% 60%,
-  rgb(245, 169, 184) 60% 80%,
-  rgb(91, 206, 250) 80% 100%
-);
+	background:
+  linear-gradient(
+    to bottom,
+    rgb(91, 206, 250) 0% 20%,
+    rgb(245, 169, 184) 20% 40%,
+    rgb(255, 255, 255) 40% 60%,
+    rgb(245, 169, 184) 60% 80%,
+    rgb(91, 206, 250) 80% 100%
+  ) left top / 50% 100% no-repeat,
+  linear-gradient(
+    to bottom,
+    rgb(214, 2, 112) 0% 40%,
+    rgb(155, 79, 150) 40% 60%,
+    rgb(0, 56, 168) 60% 100%
+  ) right top / 50% 100% no-repeat;
   }
 .links a, .MorePages a{
   color: #1b4332;
