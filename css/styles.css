@@ -48,7 +48,7 @@ color: #2d6a4f;
   margin-right: auto;
 }
 body {
-  background-color: #e0f7fa; /* light minty background */
+  background-color: linear-gradient(rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252)); /* light minty background */
 }
 .links a, .MorePages a{
   color: #1b4332;
