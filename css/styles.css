@@ -60,7 +60,7 @@ body {
   );
 }
 
-body::before {
+body:not([data-flag])::before {
   content: "";
   position: absolute;
   inset: 0;
